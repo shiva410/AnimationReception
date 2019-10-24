@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Anime Popularity Statistics</title>
+    <link href="stock.css" rel="stylesheet" type="text/css">
+    <style>
+
+        #gallery img {
+            clear: right;
+            float: right;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            width: 315px;
+        }
+
+        #signup label.error {
+            font-size: 0.8em;
+            color: #F00;
+            font-weight: bold;
+            display: block;
+            margin-left: 215px;
+        }
+
+        #signup input.error, #signup select.error {
+            background: #FFA9B8;
+            border: 1px solid red;
+        }
+    </style>
+    <script src="../_js/jquery.min.js"></script>
+    <script src="jquery_validate/jquery.validate.min.js"></script>
+    <script>
+        //Project 1
+        $(document).ready(function () {
+            $('#gallery img').each(function () {
+                var imgFile = $(this).attr('src');
+                var preloadImage = new Image();
+                var imgExt = /(\.\w{3,4}$)/;
+                preloadImage.src = imgFile.replace(imgExt, '_h$1');
+
+                $(this).hover(
+                    function () {
+                        $(this).attr('src', preloadImage.src);
+                    },
+                    function () {
+                        $(this).attr('src', imgFile);
+                    }
+                ); // end hover
+            }); // end each
+        }); // end ready
+
+        
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Animation Reception</h1>
+        <h2>Anime Popularity Statistics</h2>
+    </header>
+    <div class="content">
+        <div class="main">
+            <h2><font color="red">Thank you! We'll be in touch with you shortly.</font></h2>
+            
+        </div>
+    </div>
+    <section>
+        <h1>Fall Anime 2017</h1>
+        <article>
+            <h1>
+                Case Closed
+                (Detective Conan)
+
+            </h1>
+            <table bgcolor="#ffff99">
+                <thead>
+                    <tr>
+                        <th colspan="6">Number of Viewers</th>
+                    </tr>
+                    <tr>
+                        <th>Current</th>
+                        <th>High</th>
+                        <th>Low</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>500,000</td>
+                        <td>600,000</td>
+                        <td>400,000</td>
+                    </tr>
+                </tbody>
+            </table><div id="gallery"><img src="Detective Conan.jpg"></div><p>
+                Shinichi Kudo is a brilliant high school detective who is easily able to solve any
+                case. Things do not stay normal for long, though. While on a date with his girlfriend,
+                Ran,
+                Shinichi leaves when he spots some shady figures doing illegal activities. While
+                investigating them,
+                he is attacked from behind and force-fed a poison that was supposed to kill him.
+                However, he wakes up
+                to find himself shrunk. Will he be able to catch the criminals who did this to him,
+                given his new situation?
+
+            </p>
+            <hr>
+        </article>
+        <article>
+            <h1>
+                Code: Realize - Guardian of Rebirth
+                (Code Realize - Sousei No Himegimi)
+
+            </h1>
+            <table bgcolor="#ffff99">
+                <thead>
+                    <tr>
+                        <th colspan="6">Number of Viewers</th>
+                    </tr>
+                    <tr>
+                        <th>Current</th>
+                        <th>High</th>
+                        <th>Low</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>225,000</td>
+                        <td>230,000</td>
+                        <td>220,000</td>
+                    </tr>
+                </tbody>
+            </table><div id="gallery"><img src="Code Realize - Sousei No Himegimi.jpg"></div><p>
+                Cardia is a beautiful girl whose body contains a poison that causes anything and
+                everything she touches to melt. Because of this, she has always been alone and has
+                no memories of
+                her early life. Things take a drastic turn, though, when she meets Arsene Lupin,
+                a famous thief
+                who promises to introduce her to a world of warmth, happiness, and answers.
+
+            </p>
+            <hr>
+        </article>
+        <article>
+            <h1>
+                Inuyasha
+                (Inuyasha)
+
+            </h1>
+            <table bgcolor="#ffff99">
+                <thead>
+                    <tr>
+                        <th colspan="6">Number of Viewers</th>
+                    </tr>
+                    <tr>
+                        <th>Current</th>
+                        <th>High</th>
+                        <th>Low</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>800,000</td>
+                        <td>900,000</td>
+                        <td>600,000</td>
+                    </tr>
+                </tbody>
+            </table><div id="gallery"><img src="Inuyasha.jpg"></div><p>
+                Kagome is a seemingly average schoolgirl who lives her life normally until her
+                fifteenth birthday, when she is pulled down her family's well by a great demon and
+                transported
+                fifty years into the past. There, she meets the arrogant but strong Inuyasha, a half-demon
+                who,
+                like many other demons, seeks the sacred jewel for power. However, when Kagome accidentally
+                shatters the
+                Sacred Jewel and causes it's pieces to scatter all over Japan, Inuyasha and Kagome
+                are forced to
+                work together to collect all the shards before it gets into the hands of evil.
+
+            </p>
+            <hr>
+        </article>
+        <article>
+            <h1>
+                Spirited Away
+                (Kamikakushi)
+
+            </h1>
+            <table bgcolor="#ffff99">
+                <thead>
+                    <tr>
+                        <th colspan="6">Number of Viewers</th>
+                    </tr>
+                    <tr>
+                        <th>Current</th>
+                        <th>High</th>
+                        <th>Low</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>900,000</td>
+                        <td>1,000,000</td>
+                        <td>600,000</td>
+                    </tr>
+                </tbody>
+            </table><div id="gallery"><img src="Kamikakushi.jpg"></div><p>
+                10-year-old Chihiro and her family are moving to a new town. During the trip, though,
+                her father takes a wrong turn, and her family follows a path that leads to another
+                world. When a
+                witch turns her parents into pigs, it is up to Chihiro to find a way to save them
+                before it's too
+                late. So begins her journey of self-growth and discovery in this classic directed
+                by Hayao Miyazaki
+
+            </p>
+            <hr>
+        </article>
+        <article>
+            <h1>
+                The Ancient Magus Bride
+                (Mahoutsukai no Yome)
+
+            </h1>
+            <table bgcolor="#ffff99">
+                <thead>
+                    <tr>
+                        <th colspan="6">Number of Viewers</th>
+                    </tr>
+                    <tr>
+                        <th>Current</th>
+                        <th>High</th>
+                        <th>Low</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>125,680</td>
+                        <td>126,000</td>
+                        <td>124,000</td>
+                    </tr>
+                </tbody>
+            </table><div id="gallery"><img src="Mahoutsukai no Yome.jpg"></div><p>
+                Chise Hatori is a 16-year-old girl who has lived a life marked by tragedy.
+                When she finally decides to give up on any hope of happiness, a mysterious magus
+                appears before her and
+                decides to take her in as an apprentice. This magus is far from an ordinary human.
+                Introducing Chise to
+                the world of magic, Chise is in for an adventure and life that she never dreamed.
+
+            </p>
+            <hr>
+        </article>
+        <article>
+            <h1>
+                The Stigma of the Wind
+                (Kaze no Stigma)
+
+            </h1>
+            <table bgcolor="#ffff99">
+                <thead>
+                    <tr>
+                        <th colspan="6">Number of Viewers</th>
+                    </tr>
+                    <tr>
+                        <th>Current</th>
+                        <th>High</th>
+                        <th>Low</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>95,780</td>
+                        <td>100,000</td>
+                        <td>90,000</td>
+                    </tr>
+                </tbody>
+            </table><div id="gallery"><img src="Kaze no Stigma.jpg"></div><p>
+                Kazuma Kannagi was banished from his family for his inability to possess or control
+                fire powers. Four years later, he returns with a new name: Kazuma Yagami. He is now
+                more powerful
+                than ever because he has since developed and perfected wind magic. Unfortunately
+                for him, though,
+                many Kannagi family members have been mysteriously murdered by another wind magic
+                user, and the
+                blame is falling on him. He now has to work with Ayano Kannagi, a hot-headed fire
+                user who is
+                set to be the next head of the Kannagi family, to clear his name. What happens when
+                fire and
+                wind collide?
+
+            </p>
+            <hr>
+        </article>
+        <article>
+            <h1>
+                Yona of the Dawn
+                (Akatsuki no Yona)
+
+            </h1>
+            <table bgcolor="#ffff99">
+                <thead>
+                    <tr>
+                        <th colspan="6">Number of Viewers</th>
+                    </tr>
+                    <tr>
+                        <th>Current</th>
+                        <th>High</th>
+                        <th>Low</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>280,000</td>
+                        <td>300,000</td>
+                        <td>250,000</td>
+                    </tr>
+                </tbody>
+            </table><div id="gallery"><img src="Akatsuki no Yona.jpg"></div><p>
+                Princess Yona is the beautiful and majestic daughter of
+                King Il, and is next in line for the throne of Kouka Kingdom. She has
+                and gets everything she wants, and will soon marry Soo Won, the love of her life.
+
+                All is well until the night of her sixteenth birthday, when she walks in to find
+
+                her father dead, killed by her supposed "lover". Depressed and shocked, she is
+                chased out of her own castle along with her bodyguard, Hak. Little does she know
+                that her true journey is about to begin, where she is tasked to fulfill her duty
+                of becoming the ruler of the four great dragons of Kouka.
+
+            </p>
+            <hr>
+        </article>
+    </section>
+    <br />
+
+</body>
+</html>
